@@ -15,7 +15,7 @@ namespace MathMagicianTests.Numbers
             Assert.IsNotNull(evenNumber);
         }
         [TestMethod]
-        public void EnsureOneIsFirst()
+        public void EnsureTwoIsFirst()
         {
             //int GetFirst();
             //Arrange (Where you set stuff up)

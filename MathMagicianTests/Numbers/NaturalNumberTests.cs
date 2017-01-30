@@ -11,7 +11,7 @@ namespace MathMagicianTests.Numbers
         //Ensures everything is hooked up correctly and
         //that the permissions are correct.
         [TestMethod]
-        public void EnsureICanCreateInstance()
+        public void EnsureICanCreateNatInstance()
         {
             NaturalNumber naturalNumber = new NaturalNumber();
 
@@ -19,7 +19,7 @@ namespace MathMagicianTests.Numbers
         }
 
         [TestMethod]
-        public void EnsureOneIsTheFirstNumber()
+        public void EnsureOneIsTheFirstNatNumber()
         {
             //int GetFirst();
             //Arrange (Where you set stuff up)
@@ -33,7 +33,7 @@ namespace MathMagicianTests.Numbers
             Assert.AreEqual(expectedResult, actualResult);
         }
         [TestMethod]
-        public void EnsureCanGetNext()
+        public void EnsureCanGetNextNat()
         {
             //int GetNext(int current);
             //Arrange
@@ -47,7 +47,7 @@ namespace MathMagicianTests.Numbers
             Assert.AreEqual(expectedResult, actualResult);
         }
         [TestMethod]
-        public void EnsureGetSequence()
+        public void EnsureGetNatSequence()
         {
             //int[] GetSequence(int how_many);
             //Arrange
@@ -62,7 +62,7 @@ namespace MathMagicianTests.Numbers
             CollectionAssert.AreEqual(expectedResult, actualResult);
         }
         [TestMethod]
-        public void EnsurePrintNumbers()
+        public void EnsurePrintNatNumbers()
         {
             //string PrintNumbers(int[] how_many);
             //Arrange

@@ -4,27 +4,27 @@ using MathMagician.Numbers;
 
 namespace MathMagicianTests.Numbers
 {
-    class FibonacciNumberTests
+    public class FibonacciNumberTests
     {
         //Recursive Definition of Fibonacci
         //F3 = F2 + F1
         //F7 = F6 + F5
         [TestMethod]
-        public void EnsureICanCreateInstance()
+        public void EnsureICanCreateFibInstance()
         {
             FibonacciNumber fibonacciNumber = new FibonacciNumber();
             Assert.IsNotNull(fibonacciNumber);
         }
 
         [TestMethod]
-        public void EnsureOneIsTheFirst()
+        public void EnsureOneIsTheFirstFib()
         {
             //int GetFirst();
             //Arrange (Where you set stuff up)
             FibonacciNumber fibonacciNumber = new FibonacciNumber();
 
             //Act (Call the method you're testing) test one method at the time.
-            int expectedResult = 2;
+            int expectedResult = 1;
             int actualResult = fibonacciNumber.GetFirst();
 
             //Assert (Check the output from your method.)
@@ -32,7 +32,7 @@ namespace MathMagicianTests.Numbers
         }
 
         [TestMethod]
-        public void EnsureCanGetNext()
+        public void EnsureCanGetNextFib()
         {
             //int GetNext(int current);
             //Arrange
@@ -47,7 +47,7 @@ namespace MathMagicianTests.Numbers
         }
 
         [TestMethod]
-        public void EnsureCanGetSequence()
+        public void EnsureCanGetFibSequence()
         {
             //int[] GetSequence(int how_many);
             //Arrange
@@ -63,7 +63,7 @@ namespace MathMagicianTests.Numbers
         }
 
         [TestMethod]
-        public void EnsureCanPrintNumbers()
+        public void EnsureCanPrintFibNumbers()
         {
             //string PrintNumbers(int[] how_many);
             //Arrange
