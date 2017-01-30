@@ -10,7 +10,7 @@ namespace MathMagicianTests.Numbers
         //F3 = F2 + F1
         //F7 = F6 + F5
         [TestMethod]
-        public void EnsureICanCreateFibInstance()
+        public void EnsureICanCreateFiboInstance()
         {
             FibonacciNumber fibonacciNumber = new FibonacciNumber();
             Assert.IsNotNull(fibonacciNumber);
