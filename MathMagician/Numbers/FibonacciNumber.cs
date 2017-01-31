@@ -11,11 +11,6 @@ namespace MathMagician.Numbers
         //could hold 1, 1, 2, 3, 5, 8, 13, 21, 34...
         private int[] BaseSequence { get; set; }
        
-        public FibonacciNumber()
-        {
-            First = 0;
-            Step = First + 1;
-        }
 
         /*
        public override int GetNext(int current)

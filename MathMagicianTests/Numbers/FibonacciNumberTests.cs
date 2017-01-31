@@ -4,6 +4,7 @@ using MathMagician.Numbers;
 
 namespace MathMagicianTests.Numbers
 {
+    [TestClass]
     public class FibonacciNumberTests
     {
         //Recursive Definition of Fibonacci
