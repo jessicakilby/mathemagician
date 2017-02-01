@@ -10,27 +10,49 @@ namespace MathMagician.Numbers
     {
         //could hold 1, 1, 2, 3, 5, 8, 13, 21, 34...
         private int[] BaseSequence { get; set; }
-       
 
-        /*
+        public FibonacciNumber()
+        {
+            First = 1;
+            //Step = 
+        }
+
+        
        public override int GetNext(int current)
        {
-           //'current' argument is read-only
-           return current + Step;
+            int counter = 1;
+            int next = 1;
+            while (next <= current)
+            {
+                counter++;
+                next = getFibonacciAtPlace(counter);
+            }
+            return next;
        }
 
-       public int[] GetSequence(int how_many)
+        private int getFibonacciAtPlace(int place)
+        {
+            if (place == 0)
+            {
+                return 1;
+            }
+            if (place <= 1)
+            {
+                return place;
+            }
+            return getFibonacciAtPlace(place - 1) + getFibonacciAtPlace(place - 2);
+        }
+
+       public override int[] GetSequence(int how_many)
        {
-           int[] numbers = new int[how_many];
-           numbers[0] = GetFirst(); //i = 1
-           for (int i = 1; i < numbers.Length; i++)
-           {
-               numbers[i] = GetNext(numbers[i - 1]);
-           }
-
-           return numbers;
+            BaseSequence = new int[how_many];
+            for (var i = 0; i < how_many; i++)
+            {
+                BaseSequence[i] = getFibonacciAtPlace(i);
+            }
+           return BaseSequence;
        }
-
+        /*
        public string PrintNumbers(int[] number_array)
        {
            return String.Join(" ", number_array);

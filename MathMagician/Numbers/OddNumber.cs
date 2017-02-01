@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace MathMagician.Numbers
 {
-    public class OddNumber : Integer
+    public class OddNumber : NaturalNumber
     {
-        public int GetFirst()
+        public OddNumber()
         {
-            throw new NotImplementedException();
+            First = 1;
+            Step = 2;
         }
 
+        /*
         public int GetNext(int current)
         {
             throw new NotImplementedException();
@@ -27,5 +29,6 @@ namespace MathMagician.Numbers
         {
             throw new NotImplementedException();
         }
+        */
     }
 }
